@@ -1,0 +1,111 @@
+/* Általános stílusok az About komponenshez */
+.about-container {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  padding: 40px;
+  max-width: 800px;
+  margin: 50px auto;
+  background-color: #fff;
+  color: #3E2723; /* Sötét barna szöveg */
+  border-radius: 12px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Vélemények konténer */
+.reviews-container {
+  overflow: hidden;
+  white-space: nowrap;
+  margin-bottom: 30px; /* Több hely a vélemények és a szöveg között */
+}
+
+.reviews {
+  display: inline-block;
+  animation: scroll 20s linear infinite;
+}
+
+.review {
+  display: inline-block;
+  margin-right: 25px;
+  padding: 15px;
+  background-color: #fafafa;
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1); /* Finomabb árnyék */
+  color: #3E2723; /* Sötét barna szöveg */
+  font-size: 16px;
+  line-height: 1.5;
+  width: auto;
+  white-space: normal;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.review:hover {
+  background-color: #f4f4f4;
+  transform: translateY(-3px); /* Finom mozgás a hover hatásra */
+}
+
+.review h4 {
+  font-size: 18px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.review p {
+  font-size: 15px;
+  color: #6D4C41; /* Sötétebb barna szín a szöveghez */
+  margin-bottom: 5px;
+}
+
+/* Gördülő vélemények animáció */
+@keyframes scroll {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+/* Hozzáadás formája */
+.add-review {
+  display: flex;
+  flex-direction: column;
+  gap: 15px; /* Több hely a textarea és gomb között */
+}
+
+.add-review textarea {
+  padding: 15px;
+  font-size: 16px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: 100%;
+  height: 120px;
+  resize: vertical; /* Lehetővé teszi a méretezést */
+  color: white;
+  transition: border-color 0.3s ease;
+}
+
+.add-review textarea:focus {
+  border-color: #8B4513; /* A barna szín a fókuszált textarea-nál */
+  outline: none;
+}
+
+.add-review button {
+  padding: 12px 24px;
+  font-size: 16px;
+  background-color: #8B4513; /* Barna gomb */
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.add-review button:hover {
+  background-color: #A0522D; /* Világosabb barna gomb hover állapotban */
+  transform: translateY(-3px); /* Finom mozgás a gomb fölé vitt kurzorral */
+}
+
+.add-review button:active {
+  transform: translateY(1px); /* Kisebb nyomás hatás */
+}

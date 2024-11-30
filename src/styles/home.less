@@ -1,0 +1,105 @@
+/* Általános beállítások */
+body {
+  background-color: #f8f9fa; /* Világos szürke háttér */
+  font-family: 'Roboto', Arial, sans-serif; /* Modern betűtípus */
+  margin: 0;
+  padding: 0;
+  color: #333; /* Sötétszürke szöveg */
+}
+
+/* Navigációs sáv */
+nav {
+  background-color: #333; /* Sötétszürke */
+  color: #fff; /* Fehér szöveg */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+}
+
+nav a {
+  color: #00aaff; /* Kiemelt kék szín */
+  text-decoration: none;
+  margin: 0 10px;
+  font-weight: bold;
+}
+
+nav a:hover {
+  color: #fff; /* Fehér szín hover esetén */
+}
+
+/* Főcím szakasz */
+.home-container {
+  text-align: center;
+  padding: 50px 20px;
+  background: linear-gradient(to bottom, #00aaff, #004466); /* Színátmenetes háttér */
+  color: white; /* Fehér szöveg */
+}
+
+.home-container h1 {
+  font-size: 2.5rem;
+  margin-bottom: 20px;
+}
+
+.home-container p {
+  font-size: 1.2rem;
+}
+
+/* Tartalmi szakasz */
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 40px 20px;
+  background-color: #fafafa; /* Világosszürke háttér */
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+  max-width: 100%; /* Rugalmassá teszi a szélességet */
+  margin: -30px auto 20px; /* Középre helyezés és overlap a főcímmel */
+}
+
+.summary-text {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.summary-text h2 {
+  font-size: 2rem;
+  margin-bottom: 10px;
+  color: #333; /* Sötétszürke */
+}
+
+.summary-text p {
+  font-size: 1rem;
+  color: #555; /* Világosszürke */
+  line-height: 1.6;
+}
+
+/* ServiceShowcase (például a kép vagy slideshow) */
+.service-showcase {
+  width: 100%;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Finom árnyék */
+}
+
+.service-showcase img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Kisebb képernyők esetén optimalizálás */
+@media (max-width: 768px) {
+  .summary-container {
+    padding: 20px; /* Kisebb padding kisebb képernyőkön */
+  }
+
+  .summary-text h2 {
+    font-size: 1.5rem; /* Kisebb cím */
+  }
+
+  .summary-text p {
+    font-size: 0.9rem; /* Kisebb szöveg */
+  }
+}
